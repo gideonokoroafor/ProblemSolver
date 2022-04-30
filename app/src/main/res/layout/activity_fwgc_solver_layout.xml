@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fwgcBackground"
+    tools:context=".FWGC_Solver_Layout">
+
+    <TextView
+        android:id="@+id/fwgc_currentView"
+        android:layout_width="122dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/design_default_color_background"
+        android:text="@string/fwgc_start"
+        android:textAppearance="@style/MediumMono"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="134dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/currentLabel"
+        android:textAlignment="center"
+        android:textAppearance="@style/LargeBold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="103dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/goalLabel"
+        android:textAlignment="center"
+        android:textAppearance="@style/LargeBold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="68dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/movesLabel"
+        android:textAlignment="center"
+        android:textAppearance="@style/LargeBold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fwgc_goalView"
+        android:layout_width="122dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/fwgc_end"
+        android:textAppearance="@style/MediumMono"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <LinearLayout
+        android:id="@+id/fwgc_btn_layout"
+        android:layout_width="179dp"
+        android:layout_height="502dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fwgc_currentView"></LinearLayout>
+
+    <TextView
+        android:id="@+id/fwgc_movecount"
+        android:layout_width="67dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/LargeBold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/fwgc_msg"
+        android:layout_width="197dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/LargeBold"
+        android:textColor="#880E4F"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/fwgc_btn_layout"
+        app:layout_constraintTop_toBottomOf="@+id/fwgc_goalView" />
+
+    <LinearLayout
+        android:id="@+id/fwgc_controls_layout"
+        android:layout_width="144dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/fwgc_btn_layout"
+        app:layout_constraintTop_toBottomOf="@+id/fwgc_msg">
+
+        <Button
+            android:id="@+id/fwgc_reset_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorButtonNormal"
+            android:text="@string/reset_button"
+            android:textAlignment="center"
+            android:textAppearance="@style/LargeBold"
+            android:textColor="@color/text"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fwgc_solve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorButtonNormal"
+            android:text="@string/solve_button"
+            android:textAlignment="center"
+            android:textAppearance="@style/LargeBold"
+            android:textColor="@color/text"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fwgc_next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorButtonNormal"
+            android:text="@string/next_button"
+            android:textAlignment="center"
+            android:textAppearance="@style/LargeBold"
+            android:textColor="@color/text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/benchmarkLabel"
+            android:textAlignment="center"
+            android:textAppearance="@style/LargeBold"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fwgc_stats_label"
+        android:layout_width="176dp"
+        android:layout_height="204dp"
+        android:textAppearance="@style/MediumBold"
+        android:textColor="@color/text"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fwgc_btn_layout"
+        app:layout_constraintTop_toBottomOf="@+id/fwgc_controls_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

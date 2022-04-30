@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Problem Solver</string>
+    <string name="welcome">Welcome to the Problem Solver</string>
+    <string name="prompt">Please choose a problem</string>
+    <string name="eight_puzzle">8 PUZZLE</string>
+    <string name="fifteen">15 PUZZLE</string>
+    <string name="fwgc">FWGC</string>
+    <string name="msg">Message</string>
+    <string name="currentLabel">Current State</string>
+    <string name="goalLabel">Goal State</string>
+    <string name="movesLabel">Moves</string>
+    <string name="benchmarkLabel">Benchmarks: </string>
+    <string name="reset_button">RESET</string>
+    <string name="next_button">NEXT</string>
+    <string name="solve_button">SOLVE</string>
+
+    <string name="fwgc_intro">A farmer and his wolf, goat, and cabbage come to the end of a river they wish to cross:</string>
+    <string name="fwgc_description">There is a boat at the river\'s edge that only the farmer can row. The farmer can take at most one other object besides himself on a crossing, but if the wolf is ever left with the goat, the wolf will eat the goat; similarly, if the goat is left with the cabbage, the goat will eat the cabbag. Devise a sequence of crossings of the river so that all four characters arrive safely on the other side.</string>
+    <string name="fwgc_begin">Begin FWGC Problem</string>
+    <string name="fwgc_welcome">Welcome to the FWGC Problem</string>
+    <string name="fwgc_start">"   |  |   \n F |  |   \n W |  |   \n G |  |   \n C |  |   \n   |  |   "</string>
+    <string name="fwgc_end">"   |  |   \n   |  | F \n   |  | W \n   |  | G \n   |  | C \n   |  |   "</string>
+
+    <string name="puzzle_welcome">Welcome to the 8-Puzzle Problem</string>
+    <string name="puzzle_intro">You are given a board in which numbered tiles can slide around. There is one blank space that holds no tile. Here is an example:</string>
+    <string name="puzzle_description">A legal move consists of sliding a tile into the blank space if the tile is adjacent to it. The goal is to move tiles around until the board looks like this:</string>
+    <string name="puzzle_start">+---+---+---+\n| 2 | 8 | 3 |\n+---+---+---+\n| 1 | 6 | 4 |\n+---+---+---+\n| 7 | \  | 5 |\n+---+---+---+</string>
+    <string name="puzzle_end">+---+---+---+\n| 1 | 2 | 3 |\n+---+---+---+\n| 8 | \  | 4 |\n+---+---+---+\n| 7 | 6 | 5 |\n+---+---+---+</string>
+    <string name="puzzle_begin">Begin 8-Puzzle Problem</string>
+
+    <string name="f_puzzle_welcome">Welcome to the 15-Puzzle Problem</string>
+    <string name="f_puzzle_intro">You are given a board in which numbered tiles can slide around. There is one blank space that holds no tile. Here is an example:</string>
+    <string name="f_puzzle_description">A legal move consists of sliding a tile into the blank space if the tile is adjacent to it. The goal is to move tiles around until the board looks like this:</string>
+    <string name="f_puzzle_start">+---+---+---+---+\n| 5 | 1 | 2 | 3 |\n+---+---+---+---+\n| 6 | \  | 7 | 4 |\n+---+---+---+---+\n| 9 |10 |11 | 8 |\n+---+---+---+---+\n|13 |14 |15 |12 |\n+---+---+---+---+</string>
+    <string name="f_puzzle_end">+---+---+---+---+\n| 1 | 2 | 3 | 4 |\n+---+---+---+---+\n| 5 | 6 | 7 | 8 |\n+---+---+---+---+\n| 9 |10 |11 |12 |\n+---+---+---+---+\n|13 |14 |15 | \  |\n+---+---+---+---+</string>
+    <string name="f_puzzle_begin">Begin 15-Puzzle Problem</string>
+
+    <string name="congrats">You solved the problem. Congratulations.</string>
+    <string name="illegalMove">Illegal move. Try again.</string>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/puzzle8background"
+    tools:context=".PuzzleSolverLayout">
+
+    <TextView
+        android:id="@+id/puzzle_stats_label"
+        android:layout_width="176dp"
+        android:layout_height="157dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/MediumBold"
+        android:textColor="@color/text"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/puzzle_btn_layout"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_control_layout"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <LinearLayout
+        android:id="@+id/puzzle_control_layout"
+        android:layout_width="143dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/puzzle_btn_layout"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_msg">
+
+        <Button
+            android:id="@+id/puzzle_reset_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorButtonNormal"
+            android:text="@string/reset_button"
+            android:textAppearance="@style/MediumBold"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/puzzle_solve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorButtonNormal"
+            android:text="@string/solve_button"
+            android:textAppearance="@style/MediumBold"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/puzzle_next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorButtonNormal"
+            android:text="@string/next_button"
+            android:textAppearance="@style/MediumBold"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/benchmarkLabel"
+            android:textAlignment="center"
+            android:textAppearance="@style/MediumBold"
+            android:textColor="@color/text" />
+
+        <LinearLayout
+            android:id="@+id/puzzle_spinner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/puzzle_movecount"
+        android:layout_width="53dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/LargeBold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="68dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/movesLabel"
+        android:textAlignment="center"
+        android:textAppearance="@style/LargeBold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/puzzle_goalView"
+        android:layout_width="149dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/puzzle_end"
+        android:textAlignment="center"
+        android:textAppearance="@style/SmallMono"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/currentLabel"
+        android:textAlignment="center"
+        android:textAppearance="@style/LargeBold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/goalLabel"
+        android:textAppearance="@style/LargeBold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/puzzle_currentView"
+        android:layout_width="149dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="@color/design_default_color_background"
+        android:text="@string/puzzle_start"
+        android:textAlignment="center"
+        android:textAppearance="@style/SmallMono"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <LinearLayout
+        android:id="@+id/puzzle_btn_layout"
+        android:layout_width="184dp"
+        android:layout_height="502dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="75dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_currentView"></LinearLayout>
+
+    <TextView
+        android:id="@+id/puzzle_msg"
+        android:layout_width="195dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/MediumBold"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/puzzle_btn_layout"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_goalView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
